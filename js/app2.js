@@ -95,9 +95,10 @@ let Seattle= {
     
          { 
              console.log('cokies')
-         
+         num=0;
             for(let i=0 ;i<this.saleTime.length;i++)
             { 
+              
              this.cookies.push(Math.ceil(this.coustomerNumber[i]* this.avg) );
     
                 num =num + this.cookies[i];
@@ -162,7 +163,7 @@ let Dubai= {
     
          { 
              console.log('cokies')
-         
+             num=0;
             for(let i=0 ;i<this.saleTime.length;i++)
             { 
              this.cookies.push(Math.ceil(this.coustomerNumber[i]* this.avg) );
@@ -227,7 +228,7 @@ let Dubai= {
         
              { 
                  console.log('cokies')
-             
+                 num=0;
                 for(let i=0 ;i<this.saleTime.length;i++)
                 { 
                  this.cookies.push(Math.ceil(this.coustomerNumber[i]* this.avg) );
@@ -292,7 +293,7 @@ let Lima= {
 
      { 
          console.log('cokies')
-     
+         num=0;
         for(let i=0 ;i<this.saleTime.length;i++)
         { 
          this.cookies.push(Math.ceil(this.coustomerNumber[i]* this.avg) );
