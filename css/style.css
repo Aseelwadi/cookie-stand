@@ -2,6 +2,9 @@ body {
     background-color:rgb(255 255 255);
     font-family: 'Montserrat', sans-serif;
   }
+  * {
+    box-sizing: border-box;
+  }
   
   .main-title {
     font-size: 200%;
@@ -21,7 +24,7 @@ body {
   
   .top-header {
     background-color: rgb(64 44 5 / 77%);
-    background-image: url(http://cakeart.foobla.com/images/2016/04/21/slider333.jpg);
+    background-image: url(./img/bakground);
     background-blend-mode: multiply;
     background-size: inherit;
     width: 100%;
@@ -173,12 +176,14 @@ body {
     height: 100px;
     background-color: rgb(255 255 255);
     text-align: center;
-    color: rgb(129 39 39);;
+    color: rgb(129 39 39);
+    clear: both;
   }
   
   footer {
     padding-top: 30px;
     font-size: 110%;
+    clear: both;
   }
   
   
