@@ -5,10 +5,13 @@ function SalmonCookies(loc, minCust, maxCust, avrg) {
   this.minCust = minCust,
   this.maxCust = maxCust,
   this.avrg = avrg;
+
   SalmonCookies.allLocs.push(this);
+
   this.totalPerHour = [];
 }
 SalmonCookies.allLocs = [];
+//console.log(SalmonCookies.allLocs);
 
 // locations objects need created by the constructor
 let $loc1 = new SalmonCookies('Seattle', 23, 65, 6.3);
@@ -87,12 +90,7 @@ $loc3.showData();
 $loc4.showData();
 $loc5.showData();
 
-function formNewLoc(e) {
-  e.preventDefault();
-  console.log('Form submitted with new item' + e);
-  var locFromForm = new SalmonCookies(e.target.locName.value, parseInt(e.target.locMin.value), parseInt(e.target.locMax.value), parseInt(e.target.locAvrg.value));
-  locFromForm.showData();
-}
+
 
 
 

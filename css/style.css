@@ -2,6 +2,9 @@ body {
     background-color:rgb(255 255 255);
     font-family: 'Montserrat', sans-serif;
   }
+  * {
+    box-sizing: border-box;
+  }
   
   .main-title {
     font-size: 200%;
@@ -21,17 +24,17 @@ body {
   
   .top-header {
     background-color: rgb(64 44 5 / 77%);
-    background-image: url(http://cakeart.foobla.com/images/2016/04/21/slider333.jpg);
+    background-image:url(https://cdn.pixabay.com/photo/2018/12/13/09/02/interior-3872455_960_720.jpg);
     background-blend-mode: multiply;
-    background-size: inherit;
+    background-size: cover;
     width: 100%;
-    height: 450px;
+    height: 600px;
     background-attachment: fixed;
     background-position: 0 -120px;
     background-repeat: no-repeat;
   }
   
-  .heder{    font-size: 30px;
+  .heder{    font-size: 50px;
     text-align: center;
     font-family: Franklin Gothic Medium;
     padding-top: 15px;
@@ -74,7 +77,7 @@ body {
   .link {
     font-weight: bold;
     display: block;
-    font-size: unset;
+    font-size: 25px;
     padding-top: 35px;
     color: rgb(121 56 31);
   }
@@ -85,7 +88,7 @@ body {
   
   .top-coustomer {
     background-color: rgb(191 133 19 / 77%);
-    background-image: url(https://cdn.hipwallpaper.com/m/7/0/S35YEh.jpg);
+    background-image: url(https://cdn.hipwallpaper.com/i/2/49/amr5Q9.jpg);
     background-blend-mode: multiply;
     background-size: cover;
     width: 100%;
@@ -121,7 +124,7 @@ body {
   
   .center-logo {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 90px;
     opacity: 0;
     animation-name: title-in;
     animation-duration: 2s;
@@ -134,6 +137,12 @@ body {
     100% {opacity: 1;}
     0% {padding-top: 60px;}
     100% {padding-top: 100px;}
+  }
+
+
+  .hed-time{
+    font-size: 20px;
+    padding: 20px;
   }
   
   .table-container {
@@ -151,7 +160,7 @@ body {
   }
   
   th, .column1 {
-    padding: 10px;
+    padding: 21px;
     border: 1px solid rgb(54, 51, 51);
     background-color: rgb(127 162 193);
     text-align: center;
@@ -173,19 +182,27 @@ body {
     height: 100px;
     background-color: rgb(255 255 255);
     text-align: center;
-    color: rgb(129 39 39);;
+    color: rgb(129 39 39);
+    clear: both;
   }
   
   footer {
-    padding-top: 30px;
+   padding-top: 26px;
     font-size: 110%;
-  }
+    clear: both;
+    color: bisque;
+    text-align: center;
+    height: 101px;
+    background-color: #0c0b09;
+}
+
+
   
   
   
   
   .aboutus{
-    font-size: 18px;
+    font-size: 22px;
       font-family: cursive;
       padding-bottom: 75px;
       color: #161903;
@@ -283,5 +300,42 @@ body {
     .galleryhead{
       font-family: cursive;
     text-align: center;
+    font-size: 42px;
     color: rgb(129 39 39);
     }
+
+    .colo{
+    
+      display: inline;
+      width: Calc(100%/2);
+      padding: auto;
+    }
+
+    .three-col {
+      clear: both;
+      overflow: auto;
+      width: 100%;
+  }
+  
+  .three-col article {
+      width: calc(100% /5);
+      float: left;
+      padding-top: 30px;
+      
+  }
+  
+  .i3imgs {
+      width: 300px;
+      height: 250px;
+      padding-right: 5px;
+  }
+  .i3imgs-last {
+  
+      width: 300px;
+      height: 250px;
+      
+  }
+
+  hr{
+    margin-top: 40px;
+  }
