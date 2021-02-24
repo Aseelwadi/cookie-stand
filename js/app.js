@@ -91,6 +91,18 @@ $loc4.showData();
 $loc5.showData();
 
 
+function formNewLoc(e) {
+  e.preventDefault();
+  console.log('Form submitted with new item' + e);
+  var locFromForm = new SalmonCookies(e.target.locName.value, parseInt(e.target.locMin.value), parseInt(e.target.locMax.value), parseInt(e.target.locAvrg.value));
+  locFromForm.showData();
+}
+
+var formElement = document.getElementById('new-location');
+formElement.addEventListener('submit', formNewLoc);
+
+
+
 
 
 

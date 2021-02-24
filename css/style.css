@@ -157,6 +157,8 @@ body {
   
   .location-form {
     padding: 20px;
+    background-image: url(https://acegif.com/wp-content/gifs/fish-62.gif);
+    background-position: center;
   }
   
   th, .column1 {
@@ -339,3 +341,26 @@ body {
   hr{
     margin-top: 40px;
   }
+
+  .formstyle{
+    width: fit-content;
+    margin: auto;
+    background-color: rgb(214 226 236);
+  
+  }
+
+ .form-field {
+    padding: 15px;
+    font-size: 23px;
+  }
+  .form-input{
+    padding: 10px;
+  }
+
+  .submit{    padding: 15px;
+    width: 130px;
+    border-radius: 17px;
+    font-size: 21px;
+    margin: auto;
+    display: block;
+    background-color: #a5d468;}
