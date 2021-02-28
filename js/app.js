@@ -97,8 +97,11 @@ function formNewLoc(e) {
  
   
 var locFromForm = new SalmonCookies(e.target.locName.value, parseInt(e.target.locMin.value), parseInt(e.target.locMax.value), parseInt(e.target.locAvrg.value));
-if(e.target.locName.value ==="" || (e.target.locMin.value >= e.target.locMax.value))
-{  alert(" The Location is Empty ... OR The minimum Number of coustomers large than  Maximum number .. make sure  ^^");
+if(e.target.locName.value ===""){
+  alert("location is empty");
+}
+else if((e.target.locMin.value >= e.target.locMax.value))
+{  alert(" The minimum Number of coustomers larger than the Maximum number .. make sure this the right number   ^^");
 }else
 locFromForm.showData();
 }
