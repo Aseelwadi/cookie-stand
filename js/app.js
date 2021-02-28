@@ -94,13 +94,18 @@ $loc5.showData();
 function formNewLoc(e) {
   e.preventDefault();
   console.log('Form submitted with new item' + e);
-  var locFromForm = new SalmonCookies(e.target.locName.value, parseInt(e.target.locMin.value), parseInt(e.target.locMax.value), parseInt(e.target.locAvrg.value));
-  locFromForm.showData();
+ 
+  
+var locFromForm = new SalmonCookies(e.target.locName.value, parseInt(e.target.locMin.value), parseInt(e.target.locMax.value), parseInt(e.target.locAvrg.value));
+if(e.target.locName.value ==="" &&(e.target.locMin.value >= e.target.locMax.value))
+{  alert(" The Location is Empty ... OR The minimum Number of coustomers large than  Maximum number .. make sure  ^^");
+}else
+locFromForm.showData();
 }
 
 var formElement = document.getElementById('new-location');
+ 
 formElement.addEventListener('submit', formNewLoc);
-
 
 
 
